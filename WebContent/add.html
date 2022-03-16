@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<marquee width="60%" direction="right" style="color:gray;"><h2>Add Book field</h2></marquee>
+<h3 align="center">Add Book field</h3>
+<div class="container">
+  
+  <form action="addbook.jsp"> <!-- use jsp loginAdmin.jsp -->
+    <div class="form-group ">
+        <label for="name">Name of Book:</label>
+        <input type="text" class="form-control"  placeholder="Name of book" name="book">
+      </div>
+    <!-- <div class="form-group ">
+      <label for="email">Pdf:</label>
+      <input type="text" class="form-control"  placeholder="" name="pdf">
+    </div> -->
+    <div class="form-group ">
+      <label for="img">Img:</label>
+      <input type="text" id="img" name="img" class="form-control" value="bookimg" readonly>
+    </div>
+    <div class="form-group ">
+        <label for="price">Price:</label>
+        <input type="number" class="form-control"  placeholder="Enter price $" name="price">
+      </div>
+    <div class="form-group ">
+        <label for="author">Author:</label>
+        <input type="text" class="form-control"  placeholder="author book" name="author">
+      </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>

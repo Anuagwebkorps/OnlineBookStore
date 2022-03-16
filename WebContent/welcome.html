@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left:20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+ color: white;
+ text-decoration: none;
+}
+.middle a,.login a{
+	text-decoration: none;
+	color: white;
+
+}
+.login {
+  position: absolute;
+  top: 50%;
+  left:60%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+}
+.login a:hover{
+	color:tomato;
+}
+.middle a:hover{
+	color:tomato;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <p>Online Book Store</p>
+  </div>
+  <div class="middle">
+    <h1><a href="AdminF.html">ADMIN</a></h1>
+    <hr>
+  </div>
+ <div class="login">
+    <h1><a href="ProfileClient1.jsp">Client</a></h1>
+    <hr>
+  </div>
+  
+</div>
+
+</body>
+</html>
